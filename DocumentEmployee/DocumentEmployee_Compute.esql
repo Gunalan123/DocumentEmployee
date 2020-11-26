@@ -1,0 +1,18 @@
+
+
+CREATE COMPUTE MODULE DocumentEmployee_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		
+		
+		SET OutputRoot.JSON.Data.clientid = InputRoot.JSON.Data.clientid;
+		SET OutputRoot.JSON.Data.clinetname = 'guna';
+		SET OutputRoot.JSON.Data.clinetname1 = 'name';
+		
+		RETURN TRUE;
+	END;
+
+
+END MODULE;
