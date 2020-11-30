@@ -9,7 +9,7 @@ CREATE COMPUTE MODULE DocumentEmployee_Compute
 		
 		SET OutputRoot.JSON.Data.clientid = InputRoot.JSON.Data.clientid;
 		SET OutputRoot.JSON.Data.clinetname = 'guna';
-		SET OutputRoot.JSON.Data.clinetname1 = 'Gunalaq';
+		SET OutputRoot.JSON.Data.clinetname1 = 'Gun';
 		
 		RETURN TRUE;
 	END;
